@@ -13,12 +13,13 @@ public class Menu {
     private TaskService taskService = new TaskServiceImpl();
     private boolean flag = true;
 
-    public void start(){
+    public void program(){
         while(flag) {
             System.out.println("1) Create task.");
             System.out.println("2) Update task.");
             System.out.println("3) Remove task.");
             System.out.println("4) Get all.");
+            System.out.println("5) Exit.");
             int count = scan.nextInt();
             switch (count) {
                 case 1 -> create();
