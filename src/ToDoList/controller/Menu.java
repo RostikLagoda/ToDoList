@@ -47,7 +47,7 @@ public class Menu {
         String name = scan.next();
         System.out.println("description");
         String description = scan.next();
-        System.out.println("status");
+        System.out.println("status(PLANNING,IN_PROGRESS or FINISHED)");
         String status1 = scan.next();
         Status.getStatusByText(status1);
         taskService.update(id,new Task(name,description,status1));
